@@ -210,11 +210,6 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
   text-decoration: none!important;
   background: none!important;
 }
-/*Add underline to nav hover*/
-.header-nav-item--collection:hover {
-  text-decoration: underline!important;
-  text-underline-offset: 3px;
-}
 /*Folder*/
 .header .header-nav .header-nav-item--folder .header-nav-folder-content {
   padding: 30px;
