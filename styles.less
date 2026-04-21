@@ -1,4 +1,4 @@
-/*Cove CSS — Updated 04/15/2026*/
+/*Cove CSS — Updated 04/20/2026*/
 @fe-block-height:25.8px;
 
 /*Site Background Color*/
@@ -607,7 +607,7 @@ transition:opacity .3s ease;}}}}}
 
 //---CAREERS---//
 /*Hide List of Blog Posts*/
-section[data-current-context*='"typeName":"blog-single-column"'] .blog-single-column.collection-content-wrapper{
+section[data-current-context*='"typeName":"blog-single-column"'] .blog-single-column.collection-content-wrapper, section[data-current-context*='"typeName": "blog-single-column"'] .blog-single-column.collection-content-wrapper{
 display:none!important;}
 
 
@@ -1455,7 +1455,7 @@ transition: all .2s ease!important;}}
 
 //---BLOG GRID---//
 /*Adjust section padding*/
-section[data-current-context*='"typeName":"blog-basic-grid"'].collection-type-blog-basic-grid .content{
+section[data-current-context*='"typeName":"blog-basic-grid"'].collection-type-blog-basic-grid .content, section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content{
 display:flex!important;
 align-items:center!important;
 justify-content:center!important;
@@ -2124,7 +2124,7 @@ margin:var(--sqs-mobile-site-gutter) auto!important;}}
 
 /*Full Screen ("1" Custom Fill + Vertical Alignment)*/
 @media screen and (min-width:767px){
-section[data-current-styles*='"customSectionHeight":1'].vertical-alignment--top{
+section[data-current-styles*='"customSectionHeight":1'].vertical-alignment--top, section[data-current-styles*='"customSectionHeight": 1'].vertical-alignment--top{
 min-height:100vh!important;
 max-height:100vh!important;
 overflow:hidden!important;
@@ -2231,7 +2231,7 @@ transition:var(--trans);
 border-bottom: none!important;}}
 
 /*Custom Height 13 Section HIGH INDEX*/
-section[data-current-styles*='"customSectionHeight":13']{
+section[data-current-styles*='"customSectionHeight":13'], section[data-current-styles*='"customSectionHeight": 13']{
 z-index:10!important;}
 
 /*White*/
