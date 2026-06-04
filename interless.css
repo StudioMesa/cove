@@ -1273,6 +1273,11 @@ section[data-current-context*='"typeName": "blog-single-column"'] .blog-single-c
 .sqs-gallery-design-autogrid .summary-thumbnail-event-date {
   border-radius: var(--global-radius);
 }
+/*Hide Archive Block*/
+.sqs-block.archive-block.sqs-block-archive,
+.sqs-block-website-component.sqs-block-archive {
+  display: none!important;
+}
 .archive-block-wrapper {
   margin: auto!important;
   overflow: scroll;
