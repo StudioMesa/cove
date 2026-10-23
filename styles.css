@@ -732,7 +732,8 @@ body .sqs-block-summary-v2 .summary-block-setting-design-list .summary-item {
 }
 /*Hide List of Blog Posts*/
 section[data-current-context*='"typeName":"blog-single-column"'] .blog-single-column.collection-content-wrapper,
-section[data-current-context*='"typeName": "blog-single-column"'] .blog-single-column.collection-content-wrapper {
+section[data-current-context*='"typeName": "blog-single-column"'] .blog-single-column.collection-content-wrapper,
+section[data-definition-name="website.components.blogList"] .blog-single-column.collection-content-wrapper {
   display: none!important;
 }
 /*Show Image Captions*/
@@ -1679,7 +1680,8 @@ section[data-current-context*='"typeName": "blog-single-column"'] .blog-single-c
 }
 /*Adjust section padding*/
 section[data-current-context*='"typeName":"blog-basic-grid"'].collection-type-blog-basic-grid .content,
-section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content {
+section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content,
+section[data-definition-name="website.components.blogList"] .content:has(> .blog-basic-grid.collection-content-wrapper) {
   display: flex!important;
   align-items: center!important;
   justify-content: center!important;
@@ -1690,14 +1692,16 @@ section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-b
 }
 @media screen and (max-width: 767px) {
   section[data-current-context*='"typeName":"blog-basic-grid"'].collection-type-blog-basic-grid .content,
-  section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content {
+  section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content,
+  section[data-definition-name="website.components.blogList"] .content:has(> .blog-basic-grid.collection-content-wrapper) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 500px) {
   section[data-current-context*='"typeName":"blog-basic-grid"'].collection-type-blog-basic-grid .content,
-  section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content {
+  section[data-current-context*='"typeName": "blog-basic-grid"'].collection-type-blog-basic-grid .content,
+  section[data-definition-name="website.components.blogList"] .content:has(> .blog-basic-grid.collection-content-wrapper) {
     padding-left: var(--sqs-mobile-site-gutter);
     padding-right: var(--sqs-mobile-site-gutter);
   }
